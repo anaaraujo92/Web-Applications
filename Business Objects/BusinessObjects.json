@@ -1,0 +1,135 @@
+{
+    "Users":{
+        "type": "array",
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "user_id": { "type": "integer" },
+                    "username": { "type": "string" },
+                    "password": {"type": "string"},
+                    "name": { "type": "string" },
+                    "email": { "type": "string" },
+                    "dateofBirth": { "type": "string", "format": "date"},
+                    "phoneNumber": { "type": "string" },
+                    "address": { "type": "string" },
+                    "paymentInformation": { "type": "integer" }
+                }
+            }
+            
+        ]
+
+    },
+    "Items":{
+        "type":"array",
+        "items":[
+            {
+                "type":"object",
+                "properties":{
+                    "seller_id": {"type": "integer"},
+                    "item_id": { "type": "integer" },
+                    "itemName": { "type": "string" },
+                    "details": { "type": "string" }
+                }
+            }
+        ]
+    
+    },
+    "Auctions":{
+        "type":"array",
+        "items":[
+            {
+                "type":"object",
+                "properties":{
+                    "seller_id": {"type": "integer"},
+                    "auction_id": {"type": "integer"},
+                    "item_id": {"type": "integer"},
+                    "itemName": { "type": "string" },
+                    "itemCategories": {"type": "string"},
+                    "auctionStartTime": {"type": "string", "format": "date-time"},
+                    "auctionEndTime": {"type": "datetime", "format": "date-time"},
+                    "startingPrice": {"type": "float"},
+                    "stock": {"type": "integer"}
+                    
+                }
+            }
+        ]
+    },
+    "Categories":{
+        "type":"array",
+        "items":[
+            {
+                "type":"object",
+                "properties":{
+                    "item_id": {"type": "integer"},
+                    "categories" : {"type": "array"},
+                    "categories_id": {"type": "array"}
+                    
+                }
+            }
+        ]
+    },
+    "Bids":{
+        "type":"array",
+        "items":[
+            {
+                "type":"object",
+                "properties":{
+                    "bid_id": {"type": "integer"},
+                    "auction_id": {"type": "integer"},
+                    "bidValue": {"type": "float"},
+                    "buyer_id": {"type": "integer"},
+                    "currentBid": {"type": "float"}
+                    
+                }
+            }
+        ]
+    },
+    "Payment":{
+        "type":"array",
+        "items":[
+            {
+                "type":"object",
+                "properties":{
+                    "buyer_id": {"type": "integer"},
+                    "seller_id": {"type":"integer"},
+                    "payment_id": {"type": "integer"},
+                    "auction_id": {"type": "integer"},
+                    "itemName": {"type": "string"},
+                    "finalBidValue": {"type": "float"},
+                    "sellerPaymentInformation": {"type": "string"},
+                    "status" : {"type": "boolean"}
+                    
+                }
+            }
+        ]
+    },
+    "Delivery":{
+        "type":"array",
+        "items":[
+            {
+                "type": "object",
+                "properties":{
+                    "delivery_id": {"type": "integer"},
+                    "item_id": {"type": "integer"},
+                    "buyerAdress": {"type": "string"},
+                    "phoneNumber" : {"type": "string"}
+                    
+                }
+            }
+        ]
+    },
+    "Recommendations":{
+        "type": "array",
+        "items":[
+            {
+                "type":"object",
+                "properties":{
+                    "user_id": {"type": "integer"},
+                    "recommendations": {"type": "array"}
+                    
+                }
+            }
+        ]
+    }    
+}
