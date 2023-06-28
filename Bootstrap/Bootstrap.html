@@ -1,0 +1,832 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center text-success">
+                Auction APP
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>
+                Authentication
+            </h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="col-md-3">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="col-md-2">
+
+                    <button type="button" class="btn btn-success">
+                        Login
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <p>
+                        Don't have an account? Create one now:
+                    </p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-success">
+                                Create User
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p>
+                        Forgot password? Click below
+                    </p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-success">
+                                Forgot Password
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>User Creation</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <p>
+                            Username:<br>
+                            <input type="text" name="username"><br>
+
+                            Password:<br>
+                            <input type="password" name="password"><br>
+
+                            Email:<br>
+                            <input type="email" name="email"><br>
+
+                            Name:<br>
+                            <input type="text" name="name"><br>
+
+                            Date of Birth:<br>
+                            <input type="date" name="dob"><br>
+
+                            Phone Number (optional):<br>
+                            <input type="tel" name="phone"><br>
+
+                            Address (optional):<br>
+                            <textarea name="address"></textarea><br>
+
+                            Payment Information (optional):<br>
+                            <textarea name="payment"></textarea><br>
+                        </p>
+                        <button type="submit" class="btn btn-success">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-left">
+                User
+            </h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Johnny Bravo
+                    </p>
+                </div>
+                <div class="col-md-6">
+
+                    <address>
+                        <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA
+                        94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <button type="button" class="btn btn-success">
+                        Update
+                    </button>
+                </div>
+                <div class="col-md-6">
+
+                    <button type="button" class="btn btn-danger">
+                        Delete
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <button type="button" class="btn btn-success">
+                        Create Item
+                    </button>
+                </div>
+                <div class="col-md-6">
+
+                    <button type="button" class="btn btn-danger">
+                        Create Auction
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        Auctions Created by the User
+                    </h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Item
+                                </th>
+                                <th>
+                                    Current Bid
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                                <th>
+                                    Payment
+                                </th>
+                                <th>
+                                    Delivery
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Vintage Record Player
+                                </td>
+                                <td>
+                                    $50
+                                </td>
+                                <td>
+                                    Active
+                                </td>
+                                <td>
+                                    --
+                                </td>
+                                <td>
+                                    --
+                                </td>
+                            </tr>
+                            <tr class="table-active">
+                                <td>
+                                    Antique Lamp
+                                </td>
+                                <td>
+                                    $100
+                                </td>
+                                <td>
+                                    Active
+                                </td>
+                                <td>
+                                    --
+                                </td>
+                                <td>
+                                    --
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    Signed Baseball
+                                </td>
+                                <td>
+                                    $200
+                                </td>
+                                <td>
+                                    Awaiting Payment
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View/Create</button>
+                                </td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>
+                                    Weding Ring
+                                </td>
+                                <td>
+                                    $75
+                                </td>
+                                <td>
+                                    Closed
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View/Create</button>
+                                </td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>
+                                    Horse
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    Closed
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View/Create</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav>
+                        <div class="pagination justify-content-center" style="display: flex;">
+                            <button class="page-link btn" type="button">Previous</button>
+                            <button class="page-link btn" type="button">1</button>
+                            <button class="page-link btn" type="button">2</button>
+                            <button class="page-link btn" type="button">3</button>
+                            <button class="page-link btn" type="button">4</button>
+                            <button class="page-link btn" type="button">5</button>
+                            <button class="page-link btn" type="button">Next</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        Auctions Won
+                    </h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Item
+                                </th>
+                                <th>
+                                    My Bid
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                                <th>
+                                    Payment
+                                </th>
+                                <th>
+                                    Delivery
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Signed Guitar
+                                </td>
+                                <td>
+                                    $500
+                                </td>
+                                <td>
+                                    Awaiting Payment
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                            </tr>
+                            <tr class="table-active">
+                                <td>
+                                    Rare Painting
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    Concluded
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    Video Game
+                                </td>
+                                <td>
+                                    $30
+                                </td>
+                                <td>
+                                    Concluded
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>
+                                    Sculpture
+                                </td>
+                                <td>
+                                    $5000
+                                </td>
+                                <td>
+                                    Concluded
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                                <td>
+                                    <button class="page-link btn" type="button">View</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav>
+                        <div class="pagination justify-content-center" style="display: flex;">
+                            <button class="page-link btn" type="button">Previous</button>
+                            <button class="page-link btn" type="button">1</button>
+                            <button class="page-link btn" type="button">2</button>
+                            <button class="page-link btn" type="button">3</button>
+                            <button class="page-link btn" type="button">4</button>
+                            <button class="page-link btn" type="button">5</button>
+                            <button class="page-link btn" type="button">Next</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        Ongoing Bidded Auctions
+                    </h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Item
+                                </th>
+                                <th>
+                                    Current Bid
+                                </th>
+                                <th>
+                                    My Bid
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Luxury Watch
+                                </td>
+                                <td>
+                                    $5000
+                                </td>
+                                <td>
+                                    $4500
+                                </td>
+                                <td>
+                                    Losing
+                                </td>
+                            </tr>
+                            <tr class="table-active">
+                                <td>
+                                    Sports Car
+                                </td>
+                                <td>
+                                    $250000
+                                </td>
+                                <td>
+                                    $10
+                                </td>
+                                <td>
+                                    Losing
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    Pocket Watch
+                                </td>
+                                <td>
+                                    $100
+                                </td>
+                                <td>
+                                    $100
+                                </td>
+                                <td>
+                                    Winning
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav>
+                        <div class="pagination justify-content-center" style="display: flex;">
+                            <button class="page-link btn" type="button">Previous</button>
+                            <button class="page-link btn" type="button">1</button>
+                            <button class="page-link btn" type="button">2</button>
+                            <button class="page-link btn" type="button">3</button>
+                            <button class="page-link btn" type="button">4</button>
+                            <button class="page-link btn" type="button">5</button>
+                            <button class="page-link btn" type="button">Next</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>
+                Auctions
+            </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="inputUserSearch">Search auctions by Item Name:</label>
+                        <input type="text" id="inputUserSearch" name="inputUserSearch" ng-model="inputUserSearch">
+                        <br>
+                        <label for="inputUserSearch">Search auctions by Username:</label>
+                        <input type="text" id="inputUserSearch" name="inputUserSearch" ng-model="inputUserSearch">
+                        <br>
+                        <button type="button" class="btn btn-primary" ng-click="searchAuctions()">Search</button>
+                        <br>
+                        <button type="button" class="btn btn-primary" ng-click="searchAuctions()">Recommendations</button>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputFilterBoxAuctionsCategories">Filter auctions by Category:</label>
+                        <select id="inputFilterBoxAuctionsCategories" name="inputFilterBoxAuctionsCategories"
+                            ng-model="inputFilterBoxAuctionsCategories">
+                            <option value="">All categories</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Fashion">Fashion</option>
+                            <option value="Home & Garden">Home & Garden</option>
+                            <option value="Sporting Goods">Sporting Goods</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputFilterBoxAuctionsCurrentBid">Sort auctions by Current Bid:</label>
+                        <select id="inputFilterBoxAuctionsCurrentBid" name="inputFilterBoxAuctionsCurrentBid"
+                            ng-model="inputFilterBoxAuctionsCurrentBid">
+                            <option value="">No sorting</option>
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputFilterBoxAuctionsEndTime">Sort auctions by End Time:</label>
+                        <select id="inputFilterBoxAuctionsEndTime" name="inputFilterBoxAuctionsEndTime"
+                            ng-model="inputFilterBoxAuctionsEndTime">
+                            <option value="">No sorting</option>
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <img alt="Bootstrap Image Preview"
+                                    src="https://news.artnet.com/app/news-upload/2016/12/2016-12-20-sundial-1024x814.jpg"
+                                    style="width:100px; height: 100px;object-fit: cover;" />
+                            </td>
+                            <td>
+                                <img alt="Bootstrap Image Preview"
+                                    src="https://m.media-amazon.com/images/I/41X3B28XR7L._AC_UF1000,1000_QL80_.jpg"
+                                    style="width:100px; height: 100px;object-fit: cover;" />
+                            </td>
+                            <td>
+                                <img alt="Bootstrap Image Preview"
+                                    src="https://features.boats.com/boat-content/files/2022/12/2023-Pearl-72-Yacht.jpeg?w=450&h=450"
+                                    style="width:100px; height: 100px;object-fit: cover;" />
+                            </td>
+                            <td>
+                                <img alt="Bootstrap Image Preview"
+                                    src="https://cdn.shopify.com/s/files/1/0044/3075/7952/products/06_Mens_Crew_Neck_Jumper_NAVY_1024x1024.jpg?v=1597666686"
+                                    style="width:100px; height: 100px;object-fit: cover;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Ancient Watch</h3>
+                            </td>
+                            <td>
+                                <h3>GameBoy Advance</h3>
+                            </td>
+                            <td>
+                                <h3>Boat</h3>
+                            </td>
+                            <td>
+                                <h3>Jumper</h3>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <img alt="Bootstrap Image Preview"
+                                    src="https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FCryeuqeFKCrOZiEAzG4QEg%252FSleepless%2Bnight.jpg&width=450"
+                                    style="width:100px; height: 100px;object-fit: cover;" />
+                            </td>
+                            <td>
+                                <img alt="Bootstrap Image Preview"
+                                    src="https://www.brides.com/thmb/t2JbF2apcrKgkNPm13qZrqzFSO0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sq-b26f651f3cdd4f93b54e4ea5e13c0283.jpg"
+                                    style="width:100px; height: 100px;object-fit: cover;" />
+                            </td>
+                            <td>
+                                <img alt="Bootstrap Image Preview"
+                                    src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
+                                    style="width:100px; height: 100px;object-fit: cover;" />
+                            </td>
+                            <td>
+                                <img alt="Bootstrap Image Preview"
+                                    src="https://m.media-amazon.com/images/I/51yeBfRCRUL.jpg"
+                                    style="width:100px; height: 100px;object-fit: cover;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Collectible Toy</h3>
+                            </td>
+                            <td>
+                                <h3>Wedding Ring</h3>
+                            </td>
+                            <td>
+                                <h3>Laptop</h3>
+                            </td>
+                            <td>
+                                <h3>Glasses</h3>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" style="display: flex;">
+                    <button class="page-link btn" type="button">Previous</button>
+                    <button class="page-link btn" type="button">1</button>
+                    <button class="page-link btn" type="button">2</button>
+                    <button class="page-link btn" type="button">3</button>
+                    <button class="page-link btn" type="button">4</button>
+                    <button class="page-link btn" type="button">5</button>
+                    <button class="page-link btn" type="button">Next</button>
+                </div>
+                <br>
+                <div class="col-md-6">
+
+                    <button type="button" class="btn btn-success">
+                        CreateAuction
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>
+                Auction Creation
+            </h3>
+            <div class="row">
+                <div class="col-md-2">
+
+                    <label for="inputFilterBoxAuctionsCategories">Items available to sell:</label>
+                    <select id="inputFilterBoxAuctionsCategories" name="inputFilterBoxAuctionsCategories"
+                        ng-model="inputFilterBoxAuctionsCategories">
+                        <option value="">Items</option>
+                        <option value="Car">Car</option>
+                        <option value="Crate">Crate</option>
+                        <option value="Necklace">Necklace</option>
+                        <option value="Basketball">Basketball</option>
+                    </select>
+                    <br>
+                    Don't have an item to sell? Click below!
+                    <br>
+                    <button type="button" class="btn btn-success">
+                        CreateItem
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <label for="auctionStartingPrice">Starting Price:</label>
+                    <input type="number" id="auctionStartingPrice" name="auctionStartingPrice"
+                        ng-bind="auctionStartingPrice">
+                </div>
+                <div class="col-md-2">
+                    <label for="auctionItemStock">Item Stock:</label>
+                    <input type="number" id="auctionItemStock" name="auctionItemStock" ng-model="auctionItemStock">
+                </div>
+                <div class="col-md-2">
+                    <label for="auctionEndTime">Auction End Time:</label>
+                    <input type="datetime-local" id="auctionEndTime" name="auctionEndTime" ng-model="auctionEndTime">
+                </div>
+                <div class="col-md-4">
+                    Image of the Item <br>
+                    <img alt="Bootstrap Image Preview"
+                        src="https://www.brides.com/thmb/t2JbF2apcrKgkNPm13qZrqzFSO0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sq-b26f651f3cdd4f93b54e4ea5e13c0283.jpg"
+                        style="width:100px; height: 100px;object-fit: cover;" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-success">
+                Create Auction
+            </button>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>
+                Item Creation
+            </h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="auctionItemName">Item Name:</label>
+                    <input type="text" id="auctionItemName" name="auctionItemName" ng-bind="itemName">
+                </div>
+                <div class="col-md-3">
+                    <label for="auctionCategories">Categories:</label>
+                    <input type="text" id="auctionCategories" name="auctionCategories" ng-bind="itemCategories">
+                </div>
+                <div class="col-md-3">
+                    <label for="auctionDetails">Details:</label>
+                    <input type="text" id="auctionDetails" name="auctionDetails" ng-bind="itemDetails">
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-success">
+                        Upload Image
+                    </button>
+                    <br>
+                    <img alt="Bootstrap Image Preview"
+                        src="https://www.brides.com/thmb/t2JbF2apcrKgkNPm13qZrqzFSO0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sq-b26f651f3cdd4f93b54e4ea5e13c0283.jpg"
+                        style="width:100px; height: 100px;object-fit: cover;" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-success">
+                Create Item
+            </button>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>
+                Single Auction
+            </h3>
+            <div class="row">
+                <div class="col-md-2">
+                    <img alt="Bootstrap Image Preview"
+                        src="https://www.brides.com/thmb/t2JbF2apcrKgkNPm13qZrqzFSO0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sq-b26f651f3cdd4f93b54e4ea5e13c0283.jpg"
+                        style="width:100px; height: 100px;object-fit: cover;" />
+                </div>    
+                <div class="col-md-2">
+                    <div>
+                        <label for="auctionItemName">Item Name:</label>
+                        <input type="text" id="auctionItemName" name="auctionItemName" value="Ring" ng-bind="itemName" readonly>
+                    </div>
+                    <div>
+                        <label for="auctionDetails">Details:</label>
+                        <input type="text" id="auctionDetails" name="auctionDetails" value="1 gold karat" ng-bind="itemDetails" readonly>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <label for="auctionCategories">Categories:</label>
+                        <input type="text" id="auctionCategories" name="auctionCategories" value="Jewelery, Fashion" ng-bind="itemCategories" readonly>
+                    </div>
+                    <div>
+                        <label for="auctionStartingPrice">Current Bid:</label>
+                        <input type="number" id="auctionStartingPrice" name="auctionStartingPrice" value="350" readonly
+                            ng-bind="auctionStartingPrice">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <label for="auctionItemStock">Item Stock:</label>
+                        <input type="number" id="auctionItemStock" name="auctionItemStock" ng-bind="auctionItemStock" value="1" readonly>
+                    </div>
+                    <div>
+                        <label for="auctionEndTime">Auction End Time:</label>
+                        <input type="datetime-local" id="auctionEndTime" name="auctionEndTime" ng-bind="auctionEndTime" value="2023-05-17T14:30" readonly>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p>
+                        Do you want to place a bid?
+                    </p>
+                    <div>
+                        <label for="inputBid">Bid:</label>
+                        <input type="number" id="inputBid" name="inputBid" ng-model="inputBid">
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-success">
+                        Place Bid
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>
+                Payment
+            </h2>
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Select Payment Method:</label><br>
+                            <input type="radio" id="auction-wallet" name="payment-method" value="auction-wallet">
+                            <label for="auction-wallet">Auction Wallet</label><br>
+                            <input type="radio" id="paypal" name="payment-method" value="paypal">
+                            <label for="paypal">PayPal</label><br>
+                            <input type="radio" id="credit-debit-card" name="payment-method" value="credit-debit-card">
+                            <label for="credit-debit-card">Credit or Debit Card</label><br>
+                            <input type="radio" id="crypto" name="payment-method" value="crypto">
+                            <label for="crypto">Crypto</label><br><br>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="item-name">Item Name:</label><br>
+                            <input type="text" id="item-name" name="item-name" value="Smartphone" readonly><br><br>
+
+                            <label for="total-value">Total Value:</label><br>
+                            <input type="number" id="total-value" name="total-value" min="0" value="550" readonly><br><br>
+
+                            <button onclick="continueToPayment()">Continue</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Delivery</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="itemName">Product Name:</label><br>
+                    <input type="text" id="itemName" name="itemName" ng-bind="itemName" value="Smartphone" readonly>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <label for="address">Delivery Address:</label><br>
+                    <input type="text" id="address" name="address" ng-bind="address" value="123 Main St, Anytown, USA" readonly>
+                    <br><br>
+                    <label for="status">Phone Number:</label><br>
+                    <input type="text" id="status" name="status" ng-bind="status" value="91111111" readonly>
+                    <br><br>
+                    <label for="status">Delivery Status:</label><br>
+                    <input type="text" id="status" name="status" ng-bind="status" value="In Transit" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
