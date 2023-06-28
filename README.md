@@ -4,7 +4,7 @@
 Repository of all the projects developed for the Machine Learning classes at FCUL.
 \
 \
-**Team:**
+**Team:**\
 Ana Araujo\
 André Dias\
 Tiago Rodrigues\
