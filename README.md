@@ -1,7 +1,7 @@
 # Web Applications Blueprint Project at FCUL
 \
 \
-Repository of all the projects developed for the Machine Learning classes at FCUL.
+Repository of the project developed for the Web Applications Blueprint Project at FCUL.
 \
 \
 **Team:**\
